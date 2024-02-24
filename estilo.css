@@ -1,6 +1,17 @@
-.texto-menor{
-    font-size:13px;
+.texto-menor {
+    font-size: 13px;
 }
-.divs-facilidades{
+
+.ButtomCategoria {
+    background-color: #9353FF;
+    color: white;
+}
+
+.texto-maior,
+.icon {
+    color: #DAFF01;
+}
+
+.divs-facilidades {
     width: 325px;
 }
