@@ -59,53 +59,57 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First
-            slide</text>
-        </svg>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
+        <!--As imagens no Bootstrap tornam-se responsivas com .[img-fluid]. (Isso se aplica max-width: 100%;à height: auto;imagem para que ela seja dimensionada com a largura pai.)-->
+        <!-- Mobile - [d-md-none], (ocultado para telas medias e grandes)-->
+        <!-- Tablet - [d-none] [d-md-block] [d-xl-none],(oculto para todos tamanhos de telas) (visível para telas médias) (ocultado para telas extra grandes)-->
+        <!-- Desktop - [d-none] [d-xl-block], (oculto para todos tamanhos de telas) (visível para tamanhos de telas extra grandes)-->
+        <img class="mobile img-fuid d-sm-block" src="./assets/Mobile/banner1-mobile.png"
+          alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
+        <img class="tablet img-fuid d-none- block" src="./assets/Tablet/banner1-tablet.png"
+          alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
+        <img class="img-fuid d-none d-xl-block" src="./assets/Desktop/banner1-desktop.png"
+          alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second
-            slide</text>
-        </svg>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third
-            slide</text>
-        </svg>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second
+          slide</text>
+      </svg>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third
+          slide</text>
+      </svg>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
   </div>
 
   <h2 class="text-center">Busque por catergorias</h2>
@@ -321,14 +325,14 @@
       <div class="input-group my-3">
         <input type="email" class="form-control border-secundary rounded-0" placeholder="Digite seu e-mail"
           aria-label="Digite seu e-mail" aria-describedby="button-addon2" />
-        <button type="button" id="button-addon2">Enviar</button>
+        <button class="ButtomCategoria" type="button" id="button-addon2">Enviar</button>
       </div>
 
     </form>
 
   </section>
 
-  <footer class="text-center bg-dark text-light mt-2">
+  <footer class="text-center bg-dark text-light mt-2 rounded-bottom-0">
     <P class="py-1 m-0">2024 <i class="bi bi-c-circle-fill"></i> Desenvolvido por Alura | Projeto fictício sem fins
       comerciais.</P>
   </footer>
