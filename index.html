@@ -61,13 +61,13 @@
       <div class="carousel-item active">
         <!--As imagens no Bootstrap tornam-se responsivas com .[img-fluid]. (Isso se aplica max-width: 100%;à height: auto;imagem para que ela seja dimensionada com a largura pai.)-->
         <!-- Mobile - [d-md-none], (ocultado para telas medias e grandes)-->
+        <img class="img-fluid d-md-none" src="./assets/Mobile/banner1-mobile.png"
+          alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
         <!-- Tablet - [d-none] [d-md-block] [d-xl-none],(oculto para todos tamanhos de telas) (visível para telas médias) (ocultado para telas extra grandes)-->
-        <!-- Desktop - [d-none] [d-xl-block], (oculto para todos tamanhos de telas) (visível para tamanhos de telas extra grandes)-->
-        <img class="mobile img-fuid d-sm-block" src="./assets/Mobile/banner1-mobile.png"
+        <img class="img-fluid d-none d-md-block d-xl-none" src="./assets/Tablet/banner1-tablet.png"
           alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
-        <img class="tablet img-fuid d-none- block" src="./assets/Tablet/banner1-tablet.png"
-          alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
-        <img class="img-fuid d-none d-xl-block" src="./assets/Desktop/banner1-desktop.png"
+         <!-- Desktop - [d-none] [d-xl-block], (oculto para todos tamanhos de telas) (visível para tamanhos de telas extra grandes)-->
+        <img class="desktop img-fluid d-none d-xl-block w-100" src="./assets/Desktop/banner1-desktop.png"
           alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
       </div>
       <div class="carousel-caption d-none d-md-block">
@@ -113,7 +113,6 @@
   </div>
 
   <h2 class="text-center">Busque por catergorias</h2>
-
   <!--Centralizar, mx-auto (margin, width e height = auto)-->
   <!-- Espaçamento, g-4 -->
   <div class="container row mx-auto g-4">
